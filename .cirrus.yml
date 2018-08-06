@@ -8,6 +8,6 @@ test_task:
   cargo_cache:
     folder: $CARGO_HOME/registry
     
-  build_script: cargo build
+  build_script: ./do_build.sh
   test_script: cargo test
   before_cache_script: rm -rf $CARGO_HOME/registry/index.
