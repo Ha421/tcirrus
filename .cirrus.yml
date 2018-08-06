@@ -21,7 +21,7 @@ docker_builder:
   env:
     DOCKER_USERNAME: ENCRYPTED[1de772107c2b2e9399548b67de329e5b506842821ba763ec25658e9d527ad94ad0a9d693867a740ecda9a37c2fa6bb6f]
     DOCKER_PASSWORD: ENCRYPTED[64dd3997cbe5ef3ed5e814d6284669126cc598c70fd8831be536d39e96367ed63358bdddfff0d1b438df280ad55f5db5]
-  build_script: docker build --tag Ha421/tcirrus:$CIRRUS_BUILD_ID .
+  build_script: docker build --tag ha421/tcirrus:$CIRRUS_BUILD_ID .
   login_script: docker login --username $DOCKER_USERNAME --password $DOCKER_PASSWORD
-  push_script: docker push myrepo/foo:$CIRRUS_BUILD_ID
+  push_script: docker push ha421/tcirrus:$CIRRUS_BUILD_ID
   
