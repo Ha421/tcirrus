@@ -9,8 +9,7 @@ test_task:
     folder: $CARGO_HOME/registry
     
   build_script: 
-                          - /proc/cpuinfo
-                          - /proc/meminfo
+                          - printenv
                           - cargo build
               
   test_script: cargo test
