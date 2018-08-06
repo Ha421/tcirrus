@@ -11,7 +11,7 @@ test_task:
   build_script: 
                           - /proc/cpuinfo
                           - /proc/meminfo
-                         - cargo build
+                          - cargo build
               
   test_script: cargo test
   before_cache_script: rm -rf $CARGO_HOME/registry/index.
